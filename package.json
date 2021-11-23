@@ -1,0 +1,70 @@
+{
+  "name": "yy-react16-custom-scaffold",
+  "version": "1.0.0",
+  "description": "基于Webpack5搭建的React16脚手架",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack serve --config ./build/webpack.dev.config.js --open",
+    "build": "cross-env NODE_ENV=production webpack --config ./build/webpack.prod.config.js",
+    "build:report": "cross-env NODE_ENV=production REPORT=true webpack --config ./build/webpack.prod.config.js",
+    "eslint:init": "eslint --init",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged",
+    "commitlint": "commitlint -e",
+    "eslint:fix": "eslint --ext .js,.vue --fix src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:yyISACoder/react16-custom-scaffold.git"
+  },
+  "keywords": [],
+  "author": "Carl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yyISACoder/react16-custom-scaffold/issues"
+  },
+  "homepage": "https://github.com/yyISACoder/react16-custom-scaffold#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
+    "babel-loader": "^8.2.2",
+    "cache-loader": "^4.1.0",
+    "core-js": "3",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.3.0",
+    "dart-sass": "^1.25.0",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-webpack-plugin": "^3.0.1",
+    "html-webpack-plugin": "^5.3.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.4",
+    "mini-css-extract-plugin": "1.6.2",
+    "postcss": "^8.3.8",
+    "postcss-loader": "^6.1.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.4.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.3.0",
+    "thread-loader": "^3.0.4",
+    "webpack": "^5.53.0",
+    "webpack-bundle-analyzer": "^4.4.2",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.2.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.15.4",
+    "@babel/runtime-corejs3": "^7.15.4",
+    "axios": "^0.24.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-router-dom": "^5.3.0"
+  }
+}
